@@ -5,7 +5,7 @@
 
 ## Setup
 
-1. Download [this SQL script](./poki.sql)
+1. Download [this SQL script](https://github.com/nashville-software-school/bangazon-inc/blob/tabloid/book-1-orientation/chapters/assets/poki.sql)
 1. Open Visual Studio
 1. From Visual Studio's main menu, Select the `File` -> `Open` -> `File` menu option
 1. Use the file explorer to navigated to and select the file you downloaded in _step 1_
