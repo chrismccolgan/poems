@@ -21,8 +21,8 @@ SELECT TOP 76
 	gr.Name AS Grade,
 	ge.Name AS Gender
 FROM Author a
-  LEFT JOIN Grade gr ON a.GradeId = gr.Id
-  LEFT JOIN Gender ge ON a.GenderId = ge.Id
+	LEFT JOIN Grade gr ON a.GradeId = gr.Id
+	LEFT JOIN Gender ge ON a.GenderId = ge.Id
 ORDER BY a.Name;
 
 --7. What is the total number of words in all poems in the database?
@@ -39,14 +39,14 @@ WHERE CharCount = (SELECT MIN(CharCount) FROM Poem);
 SELECT
 	COUNT(a.Id)
 FROM Author a
-  LEFT JOIN Grade gr ON a.GradeId = gr.Id
+	LEFT JOIN Grade gr ON a.GradeId = gr.Id
 WHERE gr.Name = '3rd Grade';
 
 --10. How many authors are in the first, second or third grades?
 SELECT
 	COUNT(a.Id)
 FROM Author a
-  LEFT JOIN Grade gr ON a.GradeId = gr.Id
+	LEFT JOIN Grade gr ON a.GradeId = gr.Id
 WHERE gr.Name = '1st Grade' OR gr.Name = '2nd Grade' OR gr.Name = '3rd Grade';
 
 --11. What is the total number of poems written by fourth graders?
